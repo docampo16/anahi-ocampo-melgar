@@ -1,42 +1,26 @@
-# Anahí Ocampo-Melgar — research website
+# Sitio académico — Anahí Ocampo-Melgar (v2)
 
-Static, responsive, GitHub Pages-ready website. No build dependencies.
+Sitio estático para **GitHub Pages**. No requiere compilación, frameworks ni servidor. Español por defecto, botón ES / EN para cambiar de idioma.
 
-## Publish on GitHub Pages
+## Publicación en GitHub Pages
+1. Crear un repositorio, por ejemplo `anahi-ocampo-melgar`.
+2. Subir a la raíz `index.html`, `styles.css`, `script.js` y la carpeta `assets/`.
+3. Ir a **Settings → Pages → Build and deployment → Deploy from a branch**, seleccionar **main** y **/(root)**.
+4. Abrir la URL publicada en GitHub Pages.
 
-1. Create a public GitHub repository, e.g. `anahi-research`.
-2. Upload **index.html**, **styles.css**, **script.js**, and **assets/** to the repository root.
-3. In the repository, open **Settings → Pages**. Under Build and deployment, choose **Deploy from a branch**, `main`, `/ (root)`, then save.
-4. Visit `https://YOUR-USERNAME.github.io/anahi-research/` once deployment completes.
-5. For a custom domain, configure it in Pages settings and your DNS provider.
+## Actualizaciones
+- Los proyectos están en `index.html` bajo `id="projects"`, con español/inglés mediante `data-es` / `data-en`.
+- La bibliografía se edita en `script.js`. Los títulos de artículos se dejan en su idioma original.
+- Las fotografías provienen del ZIP aportado por la investigadora; ahora se sirven desde `assets/` (no dependen de servicios externos).
+- Las fotografías ilustran líneas temáticas; **no afirmar que representan ubicaciones específicas**.
+- Verificar consentimiento para uso público de la foto que incluye a una persona y, si corresponde, los créditos fotográficos.
+- Revisar cargos, datos de contacto, publicaciones y eventuales actividades futuras antes de publicar.
 
-## Editorial checklist BEFORE launching
+## Contenido
+- `index.html`: contenido y traducciones estáticas bilingües.
+- `styles.css`: estilos y visualización adaptable a móvil.
+- `script.js`: filtros de publicaciones, menú, selector de idioma.
+- `assets/`: fotos aportadas y favicon.
 
-- Obtain Anahí's approval of all first-person biography and positioning text.
-- Replace illustrative landscape photography with licensed field/project photos, credited with location, year and photographer. The remote images currently use Unsplash URLs and depend on external availability.
-- Replace or supplement original schematic graphics with permission-cleared figures from selected papers. Publisher PDFs do not automatically permit republication; check licenses or request figure permissions. Never imply an original schematic is a published scientific figure.
-- Verify recent publication metadata, especially the 2026 editorial and 2025 basin councils paper. The 2025 and 2026 paper list is curated, not exhaustive.
-- Add professional portrait once a suitably licensed photograph is supplied.
-- Confirm email, institutional affiliation, current appointments, outgoing profiles and final event descriptions.
-- Optionally add Spanish translation, full CV, ORCID, and project photography.
-
-## Editing
-
-- Main copy and links: `index.html`.
-- Publications and filters: `script.js` (`publications` array).
-- Colours, typography, mobile layout: `styles.css`.
-- Original SVG figures are embedded in `index.html`; the favicon is `assets/favicon.svg`.
-
-## Research sources
-
-- https://forestal.uchile.cl/facultad/estructura/cuepo-academico/anahi-ocampo-melgar
-- https://www.unccd.int/science/members/anahi-ocampo-melgar
-- https://investigadores.anid.cl/es/public_search/researcher?id=20841
-- https://doi.org/10.1016/j.ecoser.2026.101860
-- https://doi.org/10.1080/02626667.2025.2571065
-- https://2025.iasc-commons.org/abstract_author/author-626/
-- https://portaluchile.uchile.cl/noticias/244330/academica-participa-de-la-convencion-de-lucha-contra-la-desertificacion
-
-## Licensing
-
-Original website code/layout and diagrams prepared as a draft for Anahí. External journal content and photographs retain the respective owners' licensing terms. Do not redistribute publisher-owned figures without permission.
+## Note
+Project budgets are TOTAL project budgets, not personal funding. Roles are those given by the user, and full project titles remain in their original English.
